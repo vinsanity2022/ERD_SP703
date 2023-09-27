@@ -1,9 +1,61 @@
-<mxfile host="app.diagrams.net" modified="2023-09-27T13:24:13.347Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36 Edg/117.0.2045.41" version="21.8.2" etag="rmTdxNmZ94KccZla7ONT" type="github">
+<mxfile host="app.diagrams.net" modified="2023-09-27T13:40:16.918Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36 Edg/117.0.2045.41" etag="D4Rv7UGlC5D6pqUFtwIG" version="21.8.2" type="github">
   <diagram name="Page-1" id="LJPCzSkc8uASNMOOVW5p">
-    <mxGraphModel>
+    <mxGraphModel dx="706" dy="792" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="3Tur1pRjmZr1tsYk20_k-1" value="Students" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="570" y="300" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="3Tur1pRjmZr1tsYk20_k-2" value="Enrolled" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="305" y="290" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3Tur1pRjmZr1tsYk20_k-3" value="Courses" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="90" y="300" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="3Tur1pRjmZr1tsYk20_k-4" value="" style="endArrow=none;html=1;rounded=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="3Tur1pRjmZr1tsYk20_k-5" target="3Tur1pRjmZr1tsYk20_k-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="520" y="250" as="sourcePoint" />
+            <mxPoint x="600" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3Tur1pRjmZr1tsYk20_k-5" value="Student_id" style="ellipse;whiteSpace=wrap;html=1;align=center;fontStyle=4;" vertex="1" parent="1">
+          <mxGeometry x="430" y="200" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="3Tur1pRjmZr1tsYk20_k-8" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="3Tur1pRjmZr1tsYk20_k-2" target="3Tur1pRjmZr1tsYk20_k-3">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="370" y="460" as="sourcePoint" />
+            <mxPoint x="470" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3Tur1pRjmZr1tsYk20_k-9" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.983;exitY=0.494;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="3Tur1pRjmZr1tsYk20_k-2" target="3Tur1pRjmZr1tsYk20_k-1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="440" y="310" as="sourcePoint" />
+            <mxPoint x="360" y="470" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="440" y="310" />
+              <mxPoint x="480" y="440" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3Tur1pRjmZr1tsYk20_k-10" value="" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="3Tur1pRjmZr1tsYk20_k-13" target="3Tur1pRjmZr1tsYk20_k-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="580" y="240" as="sourcePoint" />
+            <mxPoint x="705" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3Tur1pRjmZr1tsYk20_k-13" value="Name" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="540" y="200" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="3Tur1pRjmZr1tsYk20_k-14" value="Program" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="650" y="200" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="3Tur1pRjmZr1tsYk20_k-15" value="" style="endArrow=none;html=1;rounded=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="3Tur1pRjmZr1tsYk20_k-14" target="3Tur1pRjmZr1tsYk20_k-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="660" y="210" as="sourcePoint" />
+            <mxPoint x="710" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
