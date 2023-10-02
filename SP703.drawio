@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-10-02T09:16:47.543Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36 Edg/117.0.2045.47" etag="VsXSqWHTE5h2qt_s536Z" version="22.0.0" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2023-10-02T09:23:15.070Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36 Edg/117.0.2045.47" etag="HcN4Vw2kUVe2Ze0g8h-W" version="22.0.0" type="github" pages="3">
   <diagram name="Page-1" id="LJPCzSkc8uASNMOOVW5p">
     <mxGraphModel dx="2383" dy="547" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="850" math="0" shadow="0">
       <root>
@@ -911,7 +911,7 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="BX2UYfeEBwumwmj1kFNR-37" value="Goods" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+        <mxCell id="BX2UYfeEBwumwmj1kFNR-37" value="Items" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
           <mxGeometry x="510" y="310" width="100" height="30" as="geometry" />
         </mxCell>
         <mxCell id="BX2UYfeEBwumwmj1kFNR-40" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="BX2UYfeEBwumwmj1kFNR-35" target="BX2UYfeEBwumwmj1kFNR-37">
@@ -938,10 +938,25 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="BX2UYfeEBwumwmj1kFNR-45" value="Supp_id" style="ellipse;whiteSpace=wrap;html=1;align=center;fontStyle=4;" vertex="1" parent="1">
-          <mxGeometry x="490" y="150" width="100" height="40" as="geometry" />
+          <mxGeometry x="480" y="210" width="100" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="BX2UYfeEBwumwmj1kFNR-46" value="Supp_name" style="ellipse;whiteSpace=wrap;html=1;align=center;fontStyle=4;" vertex="1" parent="1">
-          <mxGeometry x="380" y="140" width="100" height="40" as="geometry" />
+        <mxCell id="BX2UYfeEBwumwmj1kFNR-46" value="SuppName" style="ellipse;whiteSpace=wrap;html=1;align=center;fontStyle=4;" vertex="1" parent="1">
+          <mxGeometry x="450" y="170" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="BX2UYfeEBwumwmj1kFNR-48" value="SuppEmail" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="300" y="130" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="BX2UYfeEBwumwmj1kFNR-49" value="SuppPhone" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="400" y="130" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="BX2UYfeEBwumwmj1kFNR-50" value="SuppProd" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="230" y="160" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="BX2UYfeEBwumwmj1kFNR-51" value="SuppProdPrice" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="230" y="257" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="BX2UYfeEBwumwmj1kFNR-53" value="SuppProdQty" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="212" y="207" width="100" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
