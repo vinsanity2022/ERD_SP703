@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-10-02T15:24:24.955Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36 Edg/117.0.2045.47" etag="S79eyIzSbtG-hcYkt1tW" version="22.0.0" type="github" pages="5">
+<mxfile host="app.diagrams.net" modified="2023-10-02T15:26:07.939Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36 Edg/117.0.2045.47" etag="8TzepXDCJMMn8NR5GvAU" version="22.0.0" type="github" pages="5">
   <diagram name="Page-1" id="LJPCzSkc8uASNMOOVW5p">
     <mxGraphModel dx="2808" dy="1566" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="850" math="0" shadow="0">
       <root>
@@ -1886,7 +1886,7 @@
       </root>
     </mxGraphModel>
   </diagram>
-  <diagram id="Jy1Cs0OmqoVYHVpiyg5R" name="Capstone">
+  <diagram id="Jy1Cs0OmqoVYHVpiyg5R" name="Normalized Model">
     <mxGraphModel dx="1280" dy="1424" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="850" math="0" shadow="0">
       <root>
         <mxCell id="0" />
