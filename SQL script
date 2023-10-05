@@ -1,0 +1,104 @@
+-- Create Dimension Tables
+CREATE TABLE Time_dim (
+    TimeID INT NOT NULL PRIMARY KEY,
+    Date DATE,
+    DayOfWeek INT,
+    Month INT,
+    Quarter INT,
+    Year INT
+);
+
+CREATE TABLE Provider_dim (
+    ProviderID INT NOT NULL PRIMARY KEY,
+    FirstName VARCHAR(255),
+    LastName VARCHAR(255),
+    Specialization VARCHAR(255),
+    LicenseNumber VARCHAR(255),
+    ContactNumber VARCHAR(20),
+    Email VARCHAR(255)
+);
+
+CREATE TABLE Specialization_dim (
+    SpecializationID INT NOT NULL PRIMARY KEY,
+    Specialization VARCHAR(255)
+);
+
+-- Create Fact Table
+CREATE TABLE ProviderPerformance_fact (
+    PerformanceID INT PRIMARY KEY,
+    TimeID INT,
+    ProviderID INT,
+    SpecializationID INT,
+    AppointmentCount INT,
+    AverageSatisfactionRating DECIMAL(5, 2),
+    AverageAppointmentDuration DECIMAL(5, 2),
+    AverageWaitTime DECIMAL(5, 2),
+    FOREIGN KEY (TimeID) REFERENCES Time(TimeID),
+    FOREIGN KEY (ProviderID) REFERENCES Provider(ProviderID),
+    FOREIGN KEY (SpecializationID) REFERENCES Specialization(SpecializationID)
+);
+
+
+-------------------------------------------------------------------------------------------------------------
+
+-- Create the Patients table
+CREATE TABLE Patients (
+    PatientID INT PRIMARY KEY,
+    FirstName VARCHAR(255),
+    LastName VARCHAR(255),
+    DateOfBirth DATE,
+    ContactNumber VARCHAR(20),
+    Address VARCHAR(255)
+);
+
+-- Create the Providers table
+CREATE TABLE Providers (
+    ProviderID INT PRIMARY KEY,
+    FirstName VARCHAR(255),
+    LastName VARCHAR(255),
+    Specialization VARCHAR(255),
+    LicenseNumber VARCHAR(255),
+    ContactNumber VARCHAR(20),
+    Email VARCHAR(255)
+);
+
+-- Create the Appointments table
+CREATE TABLE Appointments (
+    AppointmentID INT PRIMARY KEY,
+    AppointmentDate DATE,
+    AppointmentTime TIME,
+    PatientID INT,
+    ProviderID INT,
+    AppointmentType VARCHAR(50),
+    AppointmentStatus VARCHAR(50),
+    FOREIGN KEY (PatientID) REFERENCES Patients(PatientID),
+    FOREIGN KEY (ProviderID) REFERENCES Providers(ProviderID)
+);
+
+-- Create the Procedures table
+CREATE TABLE Procedures (
+    ProcedureID INT PRIMARY KEY,
+    ProcedureName VARCHAR(255),
+    ProcedureDescription TEXT,
+    ProcedureCost DECIMAL(10, 2)
+);
+
+-- Create the AppointmentProcedure junction table
+CREATE TABLE AppointmentProcedure (
+    AppointmentProcedureID INT PRIMARY KEY,
+    AppointmentID INT,
+    ProcedureID INT,
+    FOREIGN KEY (AppointmentID) REFERENCES Appointments(AppointmentID),
+    FOREIGN KEY (ProcedureID) REFERENCES Procedures(ProcedureID)
+);
+--------------------------------------------------------------------------------------------------------------
+
+-- sample query in the datawarehouse
+
+SELECT  prov.firstname, 
+        ROUND(AVG(averagesatisfactionrating), 2) AS Ratings,
+        spec.specialization
+FROM public.providerperformance_fact per 
+    LEFT JOIN public.provider_dim prov ON per.providerid = prov.providerid
+    LEFT JOIN public.specialization_dim spec ON per.specializationid = spec.specializationid
+GROUP BY prov.firstname, spec.specialization;
